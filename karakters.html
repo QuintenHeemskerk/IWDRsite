@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Merriweather:wght@300&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="css/master.css">
+ <title> Lord of the Rings </title>
+ <link rel="icon" type="img/png" href="img/ring.png">
+   <script type="text/javascript" src="js/main.js" defer></script>
+   <script type="text/javascript" src="js/filterFunctie.js" defer></script>
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div class="overlay"></div>
+  <section class="header">
+
+    <nav class="navMain">
+      <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+      <article class="nav-linksMain" id="navLinks">
+        <i class="fa fa-times" onclick="verberg()"></i>
+        <ul>
+          <li><a href=".">Thuis</a></li>
+          <li><a href="verhaal.html">verhaal</a></li>
+          <li><a href="">karakters</a></li>
+          <li><a href="winkel.html">Winkel</a></li>
+        </ul>
+       </article>
+       <i class="fa fa-bars" onclick="toon()" ></i>
+     </nav>
+
+
+    <section class="tekst-karakters">
+      <h1>Karakters</h1>
+      <p>In Lord of the Rings komen een hoop karakters aan bod. Op deze pagina heb ik de belangrijkste opgesomt. </p>
+      <p>Met javascript heb ik een filter gemaakt waarmee je kan filteren tussen de rassen zodat het wat overzichtelijker wordt.  </p>
+    </section>
+    <div id="myBtnContainer">
+    <section class="knopjes">
+      <button class="btn active" onclick="filterSelection('all')"> Alles</button>
+      <button class="btn" onclick="filterSelection('mensen')"> Mensen</button>
+      <button class="btn" onclick="filterSelection('elven')"> Elven</button>
+      <button class="btn" onclick="filterSelection('dwergen')"> Dwergen</button>
+      <button class="btn" onclick="filterSelection('hobbits')"> Hobbits</button>
+    </section>
+    </div>
+
+
+<div id="karakterKaartjes">
+ <article class="filterDiv elven" >
+   <figure>
+     <img src="img/legolas.jpg" alt="foto van karakter">
+       <figcaption>legolas</figcaption>
+   </figure>
+ </article>
+
+ <article class="filterDiv hobbits" >
+   <figure>
+   <img src="img/sam.jpg" alt="foto van karakter">
+     <figcaption>Sam</figcaption>
+     </figure>
+ </article>
+
+ <article class="filterDiv mensen"  >
+   <figure>
+   <img src="img/theoden.jpg" alt="foto van karakter">
+     <figcaption>Theoden</figcaption>
+     </figure>
+ </article>
+
+ <article class="filterDiv mensen" >
+   <figure>
+   <img src="img/aragorn.jpg" alt="foto van karakter">
+     <figcaption>Aragorn</figcaption>
+     </figure>
+ </article>
+
+ <article class="filterDiv hobbits" >
+   <figure>
+     <img src="img/frodo.jpg" alt="foto van karakter">
+       <figcaption>Frodo</figcaption>
+       </figure>
+ </article>
+
+ <article class="filterDiv dwergen" >
+   <figure>
+   <img src="img/gimli.jpg" alt="foto van karakter">
+     <figcaption>Gimli</figcaption>
+     </figure>
+ </article>
+
+ <article class="filterDiv hobbits" >
+   <figure>
+   <img src="img/Pippin.jpg" alt="foto van karakter">
+     <figcaption>Pippin</figcaption>
+     </figure>
+ </article>
+
+ <article class="filterDiv elven" >
+   <figure>
+   <img src="img/Haldir.jpg" alt="foto van karakter">
+     <figcaption>Haldir</figcaption>
+     </figure>
+ </article>
+
+ <article class="filterDiv hobbits" >
+   <figure>
+     <img src="img/merry.jpg" alt="foto van karakter">
+       <figcaption>Merry</figcaption>
+       </figure>
+ </article>
+
+ <article class="filterDiv mensen" >
+   <figure>
+   <img src="img/boromir.jpg" alt="foto van karakter">
+     <figcaption>Boromir</figcaption>
+     </figure>
+ </article>
+
+ <article class="filterDiv hobbits">
+   <figure>
+   <img src="img/bilbo.jpg" alt="foto van karakter">
+     <figcaption>Bilbo</figcaption>
+     </figure>
+ </article>
+
+ <article class="filterDiv elven" >
+   <figure>
+   <img src="img/arwen.jpg" alt="foto van karakter">
+     <figcaption>Arwen</figcaption>
+     </figure>
+ </article>
+
+ <article class="filterDiv elven" >
+   <figure>
+   <img src="img/elrond.jpg" alt="foto van karakter">
+     <figcaption>Elrond</figcaption>
+     </figure>
+ </article>
+
+ <article class="filterDiv elven" >
+   <figure>
+   <img src="img/galadriel.jpg" alt="foto van karakter">
+     <figcaption>Galadriel</figcaption>
+     </figure>
+ </article>
+
+ <article class="filterDiv mensen" >
+   <figure>
+   <img src="img/isildur.jpg" alt="foto van karakter">
+     <figcaption>Isildur</figcaption>
+     </figure>
+ </article>
+
+ <article class="filterDiv mensen" >
+   <figure>
+   <img src="img/eowyn.jpg" alt="foto van karakter">
+     <figcaption>Eowyn</figcaption>
+     </figure>
+ </article>
+
+ <article class="filterDiv mensen" >
+   <figure>
+   <img src="img/faramir.jpg" alt="foto van karakter">
+     <figcaption>Faramir</figcaption>
+     </figure>
+ </article>
+
+ <article class="filterDiv mensen" >
+   <figure>
+   <img src="img/eomer.jpg" alt="foto van karakter">
+     <figcaption>Eomer</figcaption>
+     </figure>
+ </article>
+
+ <article class="filterDiv dwergen" >
+   <figure>
+   <img src="img/bombur.jpg" alt="foto van karakter">
+     <figcaption>Bombur</figcaption>
+     </figure>
+ </article>
+
+ <article class="filterDiv dwergen" >
+   <figure>
+   <img src="img/balin.jpg" alt="foto van karakter">
+     <figcaption>Balin</figcaption>
+     </figure>
+ </article>
+
+ <article class="filterDiv dwergen" >
+   <figure>
+   <img src="img/dwalin.jpg" alt="foto van karakter">
+     <figcaption>Dwalin</figcaption>
+     </figure>
+ </article>
+
+ <article class="filterDiv dwergen" >
+   <figure>
+   <img src="img/ori.jpg" alt="foto van karakter">
+     <figcaption>ori</figcaption>
+   </figure>
+ </article>
+</div>
+<button onclick="naarBoven()">Terug naar boven</button>
+</section>
+
+
+
+</body>
+</html>
